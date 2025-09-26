@@ -3,7 +3,7 @@
     "title": "UsePopcorn",
     "description": "A movie rating app where users can search, add, and rate films.",
     "technologies": ["React", "JavaScript", "API", "LocalStorage"],
-    "image": "/assets/projects/usepopcorn.png",
+    "image": "/assets/projects/project.png",
     "links": {
       "demo": "https://armita-usepopcorn.netlify.app/",
       "source": "https://github.com/armita1988/usepopcorn"
@@ -13,7 +13,7 @@
     "title": "React Quiz App",
     "description": "An interactive quiz app with multiple-choice questions, progress and scoring.",
     "technologies": ["React", "JavaScript", "CSS"],
-    "image": "/assets/projects/quiz-app.png",
+    "image": "/assets/projects/project.png",
     "links": {
       "demo": "https://armita-react-quiz-app.netlify.app/",
       "source": "https://github.com/armita1988/react-quiz-app"
@@ -23,9 +23,9 @@
     "title": "Portfolio Website",
     "description": "portfolio built with React to showcase skills, experience, and projects.",
     "technologies": ["React", "JavaScript", "CSS"],
-    "image": "/assets/projects/portfolio.png",
+    "image": "/assets/projects/project.png",
     "links": {
-      "demo": "https://example.com/my-portfolio/demo",
+      "demo": "https://armita-hajimani-portfolio.netlify.app/",
       "source": "https://github.com/armita1988/my-portfolio"
     }
   }
