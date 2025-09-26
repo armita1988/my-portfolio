@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Full-Stack Developer (Academic Projects)",
+    "company": "John Abbott College",
+    "logo": "/assets/history/johnabbott.png",
+    "startDate": "Feb, 2023",
+    "endDate": "Present",
+    "tasks": [
+      "Built web apps with the MERN stack",
+      "Created responsive UIs with React",
+      "Developed RESTful APIs with Node.js & MongoDB"
+    ]
+  },
+  {
+    "title": "Data Engineer",
+    "company": "Dataak",
+    "logo": "/assets/history/dataak.png",
+    "startDate": "Mar, 2018",
+    "endDate": "Apr, 2022",
+    "tasks": [
+      "Developed ETL services in Python & Java",
+      "Built REST APIs and data pipelines"
+    ]
+  },
+  {
+    "title": "Data Engineer",
+    "company": "LifeWeb",
+    "logo": "/assets/history/lifeweb.png",
+    "startDate": "Apr, 2017",
+    "endDate": "Mar, 2018",
+    "tasks": [
+      "Designed Java ETL workflows",
+      "Enhanced and maintained pipelines"
+    ]
+  }
+]

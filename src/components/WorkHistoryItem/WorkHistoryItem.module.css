@@ -1,0 +1,31 @@
+.work-history-item {
+    font-family: "Outfit", sans-serif;
+    font-size: 2.4rem;
+    border-radius: 1.5rem;
+    padding: 1.2rem 2.4rem;
+    background-image: linear-gradient(to right, var(--color-secondary)0%, rgba(255, 255, 255, 0)100%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s;
+}
+
+.work-history-item:hover {
+    background-size: 100% 100%;
+}
+
+
+.title {
+    font-size: 3rem;
+}
+
+.duration {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+}
+
+.tasks {
+    font-size: 2.4rem;
+    list-style-position: inside;
+    margin-left: 3rem;
+}

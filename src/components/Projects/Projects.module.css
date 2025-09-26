@@ -1,0 +1,33 @@
+.projects-container {
+    grid-area: "projects";
+    /* grid-column: 1/-1; */
+    display: grid;
+    grid-template-areas:
+        "title"
+        "items";
+    grid-template-rows: auto 1fr;
+    gap: 2.4rem;
+    width: 88%;
+    margin: 0 auto;
+    font-family: "Outfit", sans-serif;
+}
+
+.title {
+    grid-area: "title";
+    grid-column: 1/-1;
+    justify-self: start;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+
+    ;
+}
+
+.projects-list {
+    grid-area: "items";
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+    justify-items: center;
+
+
+}

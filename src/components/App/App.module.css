@@ -1,0 +1,14 @@
+.app {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 4.8rem;
+    grid-template-areas:
+        "nav"
+        "hero"
+        "about"
+        "experience"
+        "projects"
+}

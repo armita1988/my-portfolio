@@ -1,0 +1,60 @@
+.project {
+    padding: 2.4rem;
+    border-radius: 1rem;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.6rem
+}
+
+.img-box img {
+    max-width: 100%;
+}
+
+.title {
+    font-size: 2.4rem;
+}
+
+
+.title {
+    font-size: 2.4rem;
+}
+
+.description {
+    font-size: 2.4rem;
+}
+
+.technologies,
+.links {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: space-evenly;
+}
+
+.technology {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--color-bg);
+    padding: 0.4rem 1.6rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 1.2rem;
+}
+
+
+.source:link,
+.source:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--color-primary);
+    padding: 0.4rem 1.6rem;
+    border-radius: 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+}
