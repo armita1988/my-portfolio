@@ -38,7 +38,7 @@ This portfolio website showcases my skills, work history, and selected projects.
    ```bash
    npm run dev
    ```
-5. Open the link shown in your terminal (usually [http://localhost:5173](http://localhost:5173)).
+5. Open the link shown in your terminal (usually [http://localhost:3000](http://localhost:3000)).
 
 ---
 
@@ -54,7 +54,7 @@ This portfolio website showcases my skills, work history, and selected projects.
 ## 📬 Contact
 
 📧 **Email:** [armita.hajimani@gmail.com]
-💼 **LinkedIn:** [https://www.linkedin.com/in/armita-haji-mani/](#)  
+💼 **LinkedIn:** [https://www.linkedin.com/in/armita-haji-mani/](https://www.linkedin.com/in/armita-haji-mani/)  
 🌐 **Portfolio Live Demo:** [https://armita-hajimani-portfolio.netlify.app/](https://armita-hajimani-portfolio.netlify.app/)
 
 ---
