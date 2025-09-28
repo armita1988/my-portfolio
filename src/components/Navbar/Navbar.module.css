@@ -49,7 +49,7 @@
     display: none !important;
 }
 
-@media(max-width:770px) {
+@media(max-width:1200px) {
 
     .menu-icon {
         display: inline-block;

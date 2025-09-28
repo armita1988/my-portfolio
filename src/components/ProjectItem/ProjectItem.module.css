@@ -5,7 +5,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1.6rem
+    gap: 1.6rem;
+    /* max-width: 35rem; */
+    /* width: 100; */
+
 }
 
 .img-box img {
@@ -25,14 +28,15 @@
     font-size: 2.4rem;
 }
 
-.technologies,
+.tags-box,
 .links {
     display: flex;
     gap: 1.2rem;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.technology {
+.tag {
     display: inline-block;
     text-decoration: none;
     color: inherit;
