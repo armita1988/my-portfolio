@@ -36,6 +36,7 @@
 
   /* Fonts */
   --font-roboto: "Roboto";
+  --font-outfit: "Outfit";
 }
 
 
@@ -57,29 +58,34 @@ body {
   color: var(--color-text);
   background-color: var(--color-black);
   /* background-color: red; */
-
 }
 
-.container {
-  background-color: var(--color-bg);
-  width: 92%;
-  margin: 0 auto;
-  position: relative;
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media(max-width:75em) {
+  html {
+    /* 9px / 16px = 0.5 = 56.25% */
+    font-size: 56.25%;
+  }
 }
 
-/* 
-.container::before {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  width: 76rem;
-  height: 76rem;
-  border-radius: 50%;
-  background-color: #19376DB2;
-  top: 0;
-  left: 0;
-  transform: translate(-30%, -50%);
-  z-index: 10;
-  box-shadow: 0 0 10px 200px #19376DB2;
-  ;
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+/* @media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
 } */
+
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+  html {
+    font-size: 43.75%;
+  }
+}

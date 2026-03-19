@@ -1,10 +1,10 @@
-import Contact from '../../Contact/Contact';
+import Contact from '../Contact/Contact';
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Hero from '../Hero/Hero';
 import Navbar from '../Navbar/Navbar';
 import Projects from '../Projects/Projects';
-import styles from './App.module.css'
+import styles from './App.module.css';
 
 export default function App() {
   return (
@@ -18,4 +18,3 @@ export default function App() {
     </div>
   );
 }
-

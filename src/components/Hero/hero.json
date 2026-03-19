@@ -1,7 +1,6 @@
 {
   "header": "Hi, I'm Armita",
-  "title": "Full-Stack Developer with 5+ years of programming experience",
-  "subtitle": "Ex–Data Engineer now building web apps with React, Node.js, Express, and MongoDB.",
+  "subtitle": "Full-Stack Developer focused on building scalable and maintainable web applications using React, Node.js, and MongoDB, with strong emphasis on clean architecture, API design, and performance optimization.",
   "contactEmail": "armita.hajimani@gmail.com",
   "image": "/assets/hero/heroImage.png"
 }

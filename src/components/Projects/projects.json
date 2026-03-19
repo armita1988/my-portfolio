@@ -1,8 +1,17 @@
 [
   {
-    "title": "UsePopcorn",
-    "description": "A movie rating app where users can search, add, and rate films.",
-    "technologies": ["React", "JavaScript", "API", "LocalStorage"],
+    "title": "Natours Backend API",
+    "description": "Engineered a RESTful backend API for a tour booking platform using Node.js and Express, implementing secure authentication (JWT) and advanced query features within a MVC architecture.",
+    "technologies": ["Node.js", "Express.js", "MongoDB", "JWT"],
+    "image": "/assets/projects/project.png",
+    "links": {
+      "source": "https://github.com/armita1988/natours-backend"
+    }
+  },
+  {
+    "title": "Use Popcorn",
+    "description": "Developed a React application for movie tracking with external API integration, enabling users to search, rate, and persist watched movies using efficient state management.",
+    "technologies": ["React", "JavaScript", "REST API", "CSS"],
     "image": "/assets/projects/usepopcorn.png",
     "links": {
       "demo": "https://armita-usepopcorn.netlify.app/",
@@ -11,8 +20,8 @@
   },
   {
     "title": "React Quiz App",
-    "description": "An interactive quiz app with multiple-choice questions, progress and scoring.",
-    "technologies": ["React", "JavaScript", "CSS"],
+    "description": "Built a dynamic quiz application using React with structured state management (useReducer), supporting real-time scoring and user interaction flows.",
+    "technologies": ["React", "JavaScript", "useReducer", "CSS"],
     "image": "/assets/projects/quiz-app.png",
     "links": {
       "demo": "https://armita-react-quiz-app.netlify.app/",
@@ -21,7 +30,7 @@
   },
   {
     "title": "Portfolio Website",
-    "description": "portfolio built with React to showcase skills, experience, and projects.",
+    "description": "Designed and developed a responsive portfolio website using React, showcasing projects and technical skills with a clean and user-focused interface.",
     "technologies": ["React", "JavaScript", "CSS"],
     "image": "/assets/projects/portfolio.png",
     "links": {

@@ -1,14 +1,14 @@
 [
   {
-    "title": "Full-Stack Developer in Training",
-    "description": "5 years of experience as a software engineer. Now focused on full-stack development with the MERN stack, APIs, and responsive apps."
+    "title": "Full-Stack Developer",
+    "description": "Full-Stack Developer focused on building scalable and maintainable web applications using React, Node.js, and MongoDB. Experienced in designing RESTful APIs, structuring backend systems, and delivering clean, production-ready code."
   },
   {
-    "title": "Data Engineering Background",
-    "description": "Hands-on experience with large-scale data systems using Java, Python, SQL/NoSQL, and building optimized pipelines."
+    "title": "Background",
+    "description": "Background in software and data engineering, with experience building backend systems, APIs, and data workflows using Java, Python, and SQL/NoSQL databases."
   },
   {
-    "title": "Currently",
-    "description": "Enrolled in the Full-Stack Developer A.E.C. at John Abbott College, Canada. Seeking an internship as part of my program — also open to full-time opportunities and real-world projects where I can contribute and grow."
+    "title": "Current Focus",
+    "description": "Focused on growing as a Full-Stack Developer by building real-world applications and improving system design and backend architecture skills. Open to Junior Full-Stack, Frontend, or Backend Developer opportunities."
   }
 ]

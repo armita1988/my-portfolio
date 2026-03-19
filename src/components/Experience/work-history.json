@@ -1,36 +1,49 @@
 [
   {
-    "title": "Full-Stack Developer (Academic Projects)",
-    "company": "John Abbott College",
-    "logo": "/assets/history/johnabbott.png",
-    "startDate": "Feb, 2023",
+    "title": "Full-Stack Developer Intern",
+    "company": "KinoKlik",
+    "logo": "/assets/history/kinoklik_logo.jfif",
+    "startDate": "Oct 2025",
     "endDate": "Present",
     "tasks": [
-      "Built web apps with the MERN stack",
-      "Created responsive UIs with React",
-      "Developed RESTful APIs with Node.js & MongoDB"
+      "Developed React and Tailwind CSS features to improve UI responsiveness and user experience",
+      "Debugged Node.js backend logic, including authentication and API flows",
+      "Resolved bugs across frontend and backend within an existing MERN codebase"
+    ]
+  },
+  {
+    "title": "Full-Stack Developer (Academic Projects)",
+    "company": "John Abbott College",
+    "logo": "/assets/history/john_abbott_college_logo.jfif",
+    "startDate": "Feb 2023",
+    "endDate": "2025",
+    "tasks": [
+      "Built full-stack web applications using the MERN stack",
+      "Designed and implemented RESTful APIs connected to dynamic React interfaces",
+      "Managed data flow between frontend and backend using MongoDB"
     ]
   },
   {
     "title": "Data Engineer",
     "company": "Dataak",
-    "logo": "/assets/history/dataak.png",
-    "startDate": "Mar, 2018",
-    "endDate": "Apr, 2022",
+    "logo": "/assets/history/dataak_logo.jfif",
+    "startDate": "Mar 2018",
+    "endDate": "Apr 2022",
     "tasks": [
-      "Developed ETL services in Python & Java",
-      "Built REST APIs and data pipelines"
+      "Developed data pipelines using Python and Java for processing large datasets",
+      "Designed APIs and optimized data workflows for better performance and reliability",
+      "Worked with SQL and NoSQL databases to manage and transform data efficiently"
     ]
   },
   {
-    "title": "Data Engineer",
+    "title": "Junior Data Engineer",
     "company": "LifeWeb",
-    "logo": "/assets/history/lifeweb.png",
-    "startDate": "Apr, 2017",
-    "endDate": "Mar, 2018",
+    "logo": "/assets/history/lifeweb_logo.jfif",
+    "startDate": "Apr 2017",
+    "endDate": "Mar 2018",
     "tasks": [
-      "Designed Java ETL workflows",
-      "Enhanced and maintained pipelines"
+      "Developed ETL workflows using Java for data processing",
+      "Maintained and improved existing data pipelines for stability and performance"
     ]
   }
 ]

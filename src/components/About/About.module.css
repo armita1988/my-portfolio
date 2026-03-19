@@ -9,14 +9,20 @@
     justify-items: center;
     background-color: var(--color-gray);
     border-radius: 1.5rem;
-    padding: 6.4rem;
+    padding: 3.2rem 6.4rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 5%;
+
+
+
 }
 
 .about-content {
     grid-area: "content";
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.4rem;
+    grid-template-columns: 2fr 3fr;
+    gap: 8rem;
 }
 
 .about-img-box {
@@ -32,16 +38,51 @@
     grid-area: "title";
     grid-column: 1/-1;
     justify-self: start;
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
 }
 
 .about-items {
     grid-column: 2;
-    align-self: stretch;
+    /* align-self: stretch; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 2.4rem;
-    /* padding-left: 4.8rem; */
+    /* justify-content: space-between; */
+    gap: 3.5rem;
+}
+
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+
+    .section-about {
+        padding: 3.2rem 3.2rem;
+        gap: 3rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-items {
+        grid-column: 1/-1;
+        grid-row: 1;
+        max-width: 100%;
+        justify-self: start;
+    }
+
+    .about-img-box {
+        display: none;
+    }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+    .section-about {
+        padding: 0.8rem 1.6rem;
+    }
 }

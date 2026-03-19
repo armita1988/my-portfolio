@@ -1,12 +1,13 @@
 .section-hero {
-    grid-area: "hero";
+    grid-area: " hero";
     width: 88%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    gap: 4.8rem;
+    /* gap: 4.8rem; */
+    font-family: 'Roboto';
 }
 
 .hero-text {
@@ -15,40 +16,93 @@
 
 .hero-header {
     font-weight: 800;
-    font-size: 7.4rem;
-    margin-bottom: 2.4rem;
+    font-size: 7.2rem;
+    margin-bottom: 3.3rem;
 }
 
-.hero-title {
-    font-size: 3.6rem;
-    /* line-height: 1.15; */
-    margin-bottom: 2.4rem;
-}
+/* .hero-title {
+    font-size: 3rem;
+    /* margin-bottom: 2.4rem; 
+}*/
 
 .hero-subtitle {
-    font-size: 2.4rem;
-    font-weight: 300;
-    margin-bottom: 6.4rem;
-    font-style: italic;
-
-
+    font-size: 3rem;
+    margin-bottom: 5.2rem;
+    line-height: 1.2;
 }
 
 .hero-contact:link,
 hero-contact:visited {
-    font-size: 3.2rem;
+    display: inline-block;
+    font-family: 'Outfit';
+    font-size: 3rem;
     font-weight: 600;
     text-decoration: none;
     color: inherit;
     background-color: var(--color-primary);
-    padding: 1.6rem 3.2rem;
-    border-radius: 30rem;
+    padding: 1.8rem 2.6rem;
+    border-radius: 10rem;
 }
 
 .hero-img-box {
     grid-column: 2/-1;
+    max-width: 90%;
+    justify-self: end;
 }
 
 .hero-img-box img {
-    width: 100%;
+    max-width: 100%;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+    /* .section-hero {
+        grid-template-columns: 55fr 45fr; 
+         gap: 2rem;
+    } */
+
+    .hero-header {
+        font-size: 6.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.4rem;
+    }
+
+    .hero-contact:link,
+    hero-contact:visited {
+        font-size: 2.4rem;
+    }
+}
+
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+    .section-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        place-items: center;
+    }
+
+    .hero-text {
+        grid-column: 1/-1;
+        grid-row: 2;
+        /* max-width: 70%; */
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .hero-img-box {
+        grid-column: 1/-1;
+        grid-row: 1;
+        display: flex;
+        justify-self: center;
+        width: 60%
+    }
 }

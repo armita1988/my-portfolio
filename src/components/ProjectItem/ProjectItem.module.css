@@ -1,64 +1,93 @@
 .project {
-    padding: 2.4rem;
+    padding: 1.8rem 2.4rem;
     border-radius: 1rem;
     background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1.6rem;
-    /* max-width: 35rem; */
-    /* width: 100; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* line-height: 1.2; */
+}
 
+.img-box {
+    margin-bottom: 2.6rem;
 }
 
 .img-box img {
     max-width: 100%;
+    border-radius: 1rem;
+
 }
 
 .title {
-    font-size: 2.4rem;
-}
-
-
-.title {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    align-self: center;
 }
 
 .description {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    align-self: center;
+    flex-grow: 1;
 }
+
+
 
 .tags-box,
 .links {
     display: flex;
-    gap: 1.2rem;
+    gap: 0.5rem;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.tags-box {
+    flex-grow: 2;
+}
+
+.links {
+    /* flex-grow: 2; */
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 2rem;
 }
 
 .tag {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: inherit;
     background-color: var(--color-bg);
-    padding: 0.4rem 1.6rem;
+    padding: 0.2rem 1.6rem;
     border-radius: 3rem;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
     font-family: "Outfit", sans-serif;
-    margin-bottom: 1.2rem;
+    /* margin-bottom: 1.2rem; */
 }
 
-
+.source,
 .source:link,
 .source:visited {
     display: inline-block;
     text-decoration: none;
     color: inherit;
     background-color: var(--color-primary);
-    padding: 0.4rem 1.6rem;
+    padding: 0.1rem 2.2rem;
     border-radius: 3rem;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 400;
     font-family: "Outfit", sans-serif;
+    margin-top: 2.6rem;
+}
+
+a.source:not([href]) {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
 }
