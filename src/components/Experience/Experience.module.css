@@ -62,7 +62,7 @@
 @media (max-width: 59em) {
     .work-history {
         /* padding: 0 1.5rem; */
-        /* width: 75%; */
+        max-width: 100%;
         justify-self: center;
     }
 }

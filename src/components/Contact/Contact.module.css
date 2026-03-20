@@ -76,7 +76,12 @@
         place-items: center;
         gap: 4rem;
         font-size: 2rem;
+        align-items: center;
         /* background-color: #19376D; */
+    }
+
+    .text {
+        text-align: center;
     }
 
     .link img {

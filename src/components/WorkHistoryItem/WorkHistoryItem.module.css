@@ -11,6 +11,12 @@
     gap: 1.7rem;
 }
 
+.title-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
 .logo-box {
     display: flex;
     align-items: center;
@@ -45,9 +51,21 @@
     font-weight: 400;
     list-style-position: inside;
     margin-left: 1rem;
-
 }
 
 .tasks li {
     margin-bottom: 0.5rem;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width:75em) {
+    .work-history-item {
+        background-image: linear-gradient(to right, var(--color-secondary)100%, rgba(9, 76, 164, 0.3)100%);
+    }
+
+    .title {
+        text-align: center;
+    }
 }
