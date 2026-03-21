@@ -1,6 +1,6 @@
 {
   "header": "Hi, I'm Armita",
-  "subtitle": "Full-Stack Developer focused on building scalable and maintainable web applications using React, Node.js, and MongoDB, with strong emphasis on clean architecture, API design, and performance optimization.",
+  "subtitle": "Full-Stack Developer focused on building scalable and maintainable web applications using React, Node.js, Express and MongoDB, with strong emphasis on clean architecture, and API design.",
   "contactEmail": "armita.hajimani@gmail.com",
   "image": "/assets/hero/heroImage.png"
 }

@@ -20,7 +20,7 @@ export default function Contact() {
         <li className={styles.link}>
           <img src="/assets/contact/linkedinIcon.png" alt="LinkedIn icon" />
           <a href="https://www.linkedin.com/in/armita-haji-mani/" target="_blank" rel="noopener noreferrer">
-            linkedin.com/armita-haji-mani
+            linkedin.com/in/armita-haji-mani
           </a>
         </li>
 
