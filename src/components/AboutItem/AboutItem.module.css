@@ -1,57 +1,60 @@
 .about-item {
-    font-family: "Outfit", sans-serif;
-    font-size: 2.4rem;
-    border-radius: 1.5rem;
-    padding: 1.5rem 3rem;
-    background-image: linear-gradient(to right,
-            rgba(165, 215, 232, 0.42) 0%,
-            rgba(255, 255, 255, 0) 100%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.4s;
-    line-height: 1.2;
-    text-align: center;
+  height: 100%;
+  padding: 3rem;
+
+  font-family: var(--font-outfit);
+  text-align: left;
+
+  background-color: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
-/* .about-item:first-child {
-    background-size: 100% 100%;
-} */
-
-/* .about-item:hover {
-    background-size: 100% 100%;
-} */
+.about-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(111, 140, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.05);
+}
 
 .title {
-    margin-bottom: 0.5rem;
+  margin-bottom: 1.6rem;
 
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.25;
+
+  color: var(--color-text);
 }
 
 .description {
-    font-size: 2rem;
-    line-height: 1.3;
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/**************************/
-/* BELOW 1200px (Landscape Tablets) */
-/**************************/
-@media (max-width: 75em) {
-    .about-item {
-        background-image: linear-gradient(to right,
-                rgba(165, 215, 232, 0.42) 0%,
-                rgba(26, 114, 144, 0.62) 100%);
-    }
+@media (max-width: 59em) {
+  .about-item {
+    padding: 2.6rem;
+  }
 }
 
-/**************************/
-/* BELOW 544px (Phones) */
-/**************************/
 @media (max-width: 34em) {
-    .about-item {
-        padding: 0.7rem 1.5rem;
-    }
+  .about-item {
+    padding: 2.4rem;
+  }
 
-    .title {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
 }

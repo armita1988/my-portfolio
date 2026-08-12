@@ -4,40 +4,50 @@ import styles from './Navbar.module.css';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  function closeMenu() {
+    setIsOpen(false);
+  }
+
   return (
     <nav className={styles.navbar}>
       <a href="/" className={styles['navbar-title']}>
-        Portfolio
+        Armita Haji Mani
       </a>
-      <div className={`${styles['navbar-menu']} `}>
+
+      <div className={styles['navbar-menu']}>
         <img
           className={styles['menu-icon']}
           src={isOpen ? '/assets/nav/closeIcon.png' : '/assets/nav/menuIcon.png'}
-          alt="menu icon"
-          onClick={() => setIsOpen(!isOpen)}
+          alt={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          onClick={() => setIsOpen((open) => !open)}
         />
-        <ul className={`${styles['menu-items']} ${isOpen ? styles['is-open'] : ''} }`}>
+
+        <ul className={`${styles['menu-items']} ${isOpen ? styles['is-open'] : ''}`}>
           <li className={styles['menu-item']}>
-            {' '}
-            <a href="#about" onClick={() => setIsOpen(!isOpen)}>
+            <a href="#about" onClick={closeMenu}>
               About
             </a>
           </li>
+
           <li className={styles['menu-item']}>
-            {' '}
-            <a href="#experience" onClick={() => setIsOpen(!isOpen)}>
+            <a href="#experience" onClick={closeMenu}>
               Experience
             </a>
           </li>
+
           <li className={styles['menu-item']}>
-            {' '}
-            <a href="#projects" onClick={() => setIsOpen(!isOpen)}>
+            <a href="#projects" onClick={closeMenu}>
               Projects
             </a>
           </li>
           <li className={styles['menu-item']}>
-            {' '}
-            <a href="#contact" onClick={() => setIsOpen(!isOpen)}>
+            <a href="#education" onClick={closeMenu}>
+              Education
+            </a>
+          </li>
+
+          <li className={styles['menu-item']}>
+            <a href="#contact" onClick={closeMenu}>
               Contact
             </a>
           </li>

@@ -1,41 +1,44 @@
 [
   {
-    "title": "Natours Backend API",
-    "description": "Engineered a RESTful backend API for a tour booking platform using Node.js and Express, implementing secure authentication (JWT) and advanced query features within a MVC architecture.",
-    "technologies": ["Node.js", "Express.js", "MongoDB", "JWT"],
-    "image": "/assets/projects/project.png",
+    "title": "Trailora",
+    "subtitle": "Production Full-Stack Travel Booking Platform",
+    "description": "As the sole developer, I independently engineered, built, and deployed Trailora end-to-end as a live travel-booking platform, spanning a responsive React frontend, Node.js/Express REST API, MongoDB Atlas, authentication and authorization, Stripe payments, AWS infrastructure, Docker, and GitHub Actions CI/CD.",
+    "technologies": ["React", "Node.js", "Express", "MongoDB Atlas", "Stripe", "AWS", "Docker", "GitHub Actions"],
+    "image": "/assets/projects/trailora-explore.png",
+    "featured": true,
+    "highlights": [
+      "Responsive desktop, tablet, and mobile product experience with tour discovery, search, filtering, maps, authentication, bookings, reviews, and downloadable invoices.",
+      "REST APIs and MongoDB workflows for tours, users, reviews, and bookings with JWT/cookie authentication, role-based authorization, and verified Stripe webhooks.",
+      "Production delivery through AWS, Docker, Nginx, and GitHub Actions, including S3/CloudFront frontend deployment and commit-SHA backend releases to EC2."
+    ],
     "links": {
-      "source": "https://github.com/armita1988/natours-backend"
+      "demo": "https://trailora.armita.dev",
+      "frontend": "https://github.com/armita1988/trailora-frontend",
+      "backend": "https://github.com/armita1988/trailora-backend"
     }
   },
   {
-    "title": "Use Popcorn",
-    "description": "Developed a React application for movie tracking with external API integration, enabling users to search, rate, and persist watched movies using efficient state management.",
-    "technologies": ["React", "JavaScript", "REST API", "CSS"],
-    "image": "/assets/projects/usepopcorn.png",
+    "title": "usePopcorn",
+    "subtitle": "React Movie Discovery & Rating Application",
+    "description": "A responsive React application implemented from scratch with reusable custom hooks, OMDb API integration, abortable asynchronous requests, persistent localStorage state, keyboard interactions, and reusable rating and movie components.",
+    "technologies": ["React", "JavaScript", "Custom Hooks", "OMDb API", "AbortController", "localStorage"],
+    "image": "/assets/projects/usepopcorn-preview.png",
+    "featured": false,
     "links": {
       "demo": "https://armita-usepopcorn.netlify.app/",
       "source": "https://github.com/armita1988/usepopcorn"
     }
   },
   {
-    "title": "React Quiz App",
-    "description": "Built a dynamic quiz application using React with structured state management (useReducer), supporting real-time scoring and user interaction flows.",
-    "technologies": ["React", "JavaScript", "useReducer", "CSS"],
-    "image": "/assets/projects/quiz-app.png",
+    "title": "React Quiz",
+    "subtitle": "Timed React Quiz Application",
+    "description": "A responsive React quiz application implemented from scratch with useReducer-driven state management, asynchronous question loading, timed quiz flow, scoring, progress tracking, answer feedback, and restart functionality.",
+    "technologies": ["React", "JavaScript", "useReducer", "useEffect", "Fetch API", "CSS"],
+    "image": "/assets/projects/react-quiz-preview.png",
+    "featured": false,
     "links": {
       "demo": "https://armita-react-quiz-app.netlify.app/",
       "source": "https://github.com/armita1988/react-quiz-app"
-    }
-  },
-  {
-    "title": "Portfolio Website",
-    "description": "Designed and developed a responsive portfolio website using React, showcasing projects and technical skills with a clean and user-focused interface.",
-    "technologies": ["React", "JavaScript", "CSS"],
-    "image": "/assets/projects/portfolio.png",
-    "links": {
-      "demo": "https://armita-hajimani-portfolio.netlify.app/",
-      "source": "https://github.com/armita1988/my-portfolio"
     }
   }
 ]

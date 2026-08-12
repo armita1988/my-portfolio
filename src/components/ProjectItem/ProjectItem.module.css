@@ -1,94 +1,312 @@
-.project {
-    padding: 1.8rem 2.4rem;
-    border-radius: 1rem;
-    background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* line-height: 1.2; */
+.project-item {
+  height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
-.img-box {
-    margin-bottom: 2.6rem;
+.project-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(87, 108, 188, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-.img-box img {
-    max-width: 100%;
-    border-radius: 1rem;
+/* ---------- Featured Trailora ---------- */
 
+.featured {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+
+  min-height: auto;
+}
+
+.featured .project-image-box {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+
+  align-self: start;
+
+  overflow: hidden;
+
+  background-color: #f7f8f8;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 0;
+}
+
+.featured .project-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top center;
+}
+
+.featured .project-content {
+  padding: 3.6rem;
+}
+
+.featured .title {
+  font-size: 3.2rem;
+}
+
+.featured .subtitle {
+  font-size: 1.75rem;
+}
+
+.featured .description {
+  font-size: 1.6rem;
+}
+
+/* ---------- Image ---------- */
+
+.project-image-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background-color: rgba(255, 255, 255, 0.025);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* ---------- Content ---------- */
+
+.project-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 2.8rem;
+}
+
+.project-heading {
+  margin-bottom: 1.8rem;
 }
 
 .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.6rem;
-    align-self: center;
+  margin-bottom: 0.6rem;
+
+  font-family: var(--font-outfit);
+  font-size: 2.4rem;
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-family: var(--font-outfit);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.4;
+
+  color: var(--color-primary);
 }
 
 .description {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    align-self: center;
-    flex-grow: 1;
-    text-align: center;
+  margin-bottom: 2.2rem;
+
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.72);
 }
 
+/* ---------- Trailora Highlights ---------- */
 
+.highlights {
+  margin: 0 0 2.6rem;
+  padding-left: 2rem;
 
-.tags-box,
+  font-family: var(--font-roboto);
+  font-size: 1.55rem;
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.highlight {
+  padding-left: 0.5rem;
+}
+
+.highlight:not(:last-child) {
+  margin-bottom: 0.9rem;
+}
+
+.highlight::marker {
+  color: var(--color-primary);
+}
+
+/* ---------- Technologies ---------- */
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+
+  margin: 0 0 2.6rem;
+  padding: 0;
+
+  list-style: none;
+}
+
+.technology {
+  padding: 0.65rem 1rem;
+
+  font-family: var(--font-outfit);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  background-color: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.6rem;
+}
+
+/* ---------- Links ---------- */
+
 .links {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin-top: auto;
 }
 
-.tags-box {
-    flex-grow: 2;
+.primary-link,
+.secondary-link {
+  min-height: 4.4rem;
+  padding: 1.1rem 1.6rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--font-outfit);
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1;
+
+  text-decoration: none;
+
+  border-radius: 0.7rem;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.links {
-    /* flex-grow: 2; */
-    align-items: flex-end;
-    justify-content: space-around;
-    gap: 2rem;
+.primary-link:link,
+.primary-link:visited {
+  color: var(--color-text);
+
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
-.tag {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-    background-color: var(--color-bg);
-    padding: 0.2rem 1.6rem;
-    border-radius: 3rem;
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: "Outfit", sans-serif;
-    /* margin-bottom: 1.2rem; */
+.secondary-link:link,
+.secondary-link:visited {
+  color: var(--color-text);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.source,
-.source:link,
-.source:visited {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    background-color: var(--color-primary);
-    padding: 0.1rem 2.2rem;
-    border-radius: 3rem;
-    font-size: 2.5rem;
-    font-weight: 400;
-    font-family: "Outfit", sans-serif;
-    margin-top: 2.6rem;
+.primary-link:hover,
+.secondary-link:hover {
+  transform: translateY(-2px);
 }
 
-a.source:not([href]) {
-    opacity: 0.4;
-    cursor: not-allowed;
-    pointer-events: none;
+.secondary-link:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: var(--color-primary);
+}
+
+.primary-link:focus-visible,
+.secondary-link:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 4px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 75em) {
+  .featured {
+    grid-template-columns: 1fr;
+  }
+
+  .featured .project-image-box {
+    aspect-ratio: 16 / 9;
+
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .featured .project-image {
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .featured .project-content {
+    padding: 3.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .project-content {
+    padding: 2.4rem;
+  }
+
+  .featured .project-content {
+    padding: 2.4rem;
+  }
+
+  .featured .title {
+    font-size: 2.7rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .description,
+  .highlights {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .primary-link,
+  .secondary-link {
+    width: 100%;
+  }
 }

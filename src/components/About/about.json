@@ -1,14 +1,14 @@
 [
   {
-    "title": "Full-Stack Developer",
-    "description": "Full-Stack Developer focused on building scalable and maintainable web applications using React, Node.js, and MongoDB. Experienced in designing RESTful APIs, structuring backend systems, and delivering clean, production-ready code."
+    "title": "Production Engineering Foundation",
+    "description": "5+ years of professional engineering experience building and maintaining backend data systems, APIs, and ETL/ELT workflows with Python, Java, Kafka, Elasticsearch, and SQL/NoSQL technologies."
   },
   {
-    "title": "Background",
-    "description": "Background in software and data engineering, with experience building backend systems, APIs, and data workflows using Java, Python, and SQL/NoSQL databases."
+    "title": "Full-Stack Product Development",
+    "description": "Build end-to-end web applications across responsive React interfaces, Node.js/Express APIs, MongoDB data models, authentication, payments, and user-facing product workflows."
   },
   {
-    "title": "Current Focus",
-    "description": "Focused on growing as a Full-Stack Developer by building real-world applications and improving system design and backend architecture skills. Open to Junior Full-Stack, Frontend, or Backend Developer opportunities."
+    "title": "Cloud & Delivery",
+    "description": "Deliver applications through AWS, Docker, Nginx, and GitHub Actions CI/CD, with hands-on experience in cloud infrastructure, containerized releases, and automated frontend and backend deployments."
   }
 ]

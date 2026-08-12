@@ -1,94 +1,175 @@
-.container {
-    grid-area: "contact";
-    width: 88%;
-    color: var(--color-text);
-    /* background-color: var(--color-gray); */
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "text"
-        "links";
-    /* padding: 6.4rem; */
-    padding-bottom: 0;
-    font-size: 2.5rem;
-    gap: 4rem;
-    border-radius: 1rem;
+.section-contact {
+  grid-area: contact;
+
+  width: 88%;
+  max-width: 118rem;
+  margin: 0 auto;
+  padding: 7rem 0 8rem;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(28rem, 0.6fr);
+  align-items: end;
+  gap: 6rem;
+
+  font-family: var(--font-outfit);
 }
 
-.text {
-    grid-area: "text";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-    line-height: 1.4;
+.contact-content {
+  max-width: 78rem;
 }
 
-.text h2 {
-    font-size: 5rem;
-    font-weight: 700;
-    letter-spacing: 0.4rem;
-    margin-bottom: 1.5rem;
+.section-label {
+  margin-bottom: 1.4rem;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: var(--color-primary);
 }
 
-.text p {
-    font-weight: 400;
-    /* letter-spacing: 0.2rem; */
+.contact-title {
+  margin-bottom: 2rem;
+
+  font-size: 4.4rem;
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+
+  color: var(--color-text);
 }
 
-.links {
-    grid-area: "links";
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    list-style: none;
-    gap: 1rem;
-    margin-bottom: 2.4rem;
-    font-size: 2rem;
+.contact-description {
+  max-width: 72rem;
+
+  font-family: var(--font-roboto);
+  font-size: 1.7rem;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.link {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
 }
 
-.link a {
-    color: var(--color-text);
-    text-decoration: none;
-    font-weight: 400;
-    letter-spacing: 5%;
+.primary-link,
+.secondary-link {
+  min-height: 4.8rem;
+  padding: 1.2rem 1.8rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+
+  text-decoration: none;
+
+  border-radius: 0.8rem;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.link img {
-    max-width: 3rem;
+.primary-link:link,
+.primary-link:visited {
+  color: var(--color-text);
+
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
-/**************************/
-/* BELOW 1200px (Landscape Tablets)  */
-/**************************/
+.secondary-link:link,
+.secondary-link:visited {
+  color: var(--color-text);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.primary-link:hover,
+.secondary-link:hover {
+  transform: translateY(-2px);
+}
+
+.secondary-link:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: var(--color-primary);
+}
+
+.primary-link:focus-visible,
+.secondary-link:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 4px;
+}
+
+/* ---------- Tablet ---------- */
+
 @media (max-width: 75em) {
-    .container {
-        grid-template-columns: repeat(1, 1fr);
-        place-items: center;
-        gap: 4rem;
-        font-size: 2rem;
-        align-items: center;
-        /* background-color: #19376D; */
-    }
+  .section-contact {
+    width: 100%;
+    padding: 6rem 0 7rem;
+  }
 
-    .text {
-        text-align: center;
-    }
+  .contact-title {
+    font-size: 4rem;
+  }
+}
 
-    .link img {
-        max-width: 2rem;
-    }
+/* ---------- Small Tablet / Large Mobile ---------- */
 
-    .text {
-        align-items: center;
-    }
+@media (max-width: 59em) {
+  .section-contact {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 3rem;
+  }
+
+  .contact-content {
+    max-width: 72rem;
+  }
+
+  .contact-links {
+    width: 100%;
+    max-width: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 34em) {
+  .section-contact {
+    padding: 4.5rem 0 6rem;
+    gap: 2.8rem;
+  }
+
+  .contact-title {
+    font-size: 3.4rem;
+  }
+
+  .contact-description {
+    font-size: 1.6rem;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-link,
+  .secondary-link {
+    width: 100%;
+  }
 }

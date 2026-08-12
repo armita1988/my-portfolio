@@ -1,71 +1,144 @@
 .work-history-item {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.3;
-    border-radius: 1.5rem;
-    padding: 1.2rem 1.5rem 1rem;
-    background-image: linear-gradient(to right, var(--color-secondary)0%, rgba(255, 255, 255, 0)100%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.4s;
-    display: flex;
-    gap: 1.7rem;
-}
+  padding: 3rem;
 
-.title-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
+  font-family: var(--font-outfit);
 
-.logo-box {
-    display: flex;
-    align-items: center;
-}
+  background-color: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
 
-.logo-box img {
-    max-width: 5rem;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .work-history-item:hover {
-    background-size: 100% 100%;
+  transform: translateY(-3px);
+  border-color: rgba(87, 108, 188, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
+.work-history-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
 
+  margin-bottom: 2.4rem;
+}
+
+.role-info {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.logo-box {
+  width: 4.8rem;
+  height: 4.8rem;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background-color: #fff;
+  border-radius: 0.6rem;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .title {
-    font-size: 2.5rem;
-    font-weight: 500;
-    letter-spacing: 5%;
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
+
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1.25;
+
+  color: var(--color-text);
+}
+
+.company {
+  font-size: 1.65rem;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .duration {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 1.2rem;
-    letter-spacing: 5%;
+  flex-shrink: 0;
+
+  padding-top: 0.3rem;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .tasks {
-    font-size: 1.9rem;
-    font-weight: 400;
-    list-style-position: inside;
-    margin-left: 1rem;
+  padding-left: 2rem;
+
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.72);
 }
 
-.tasks li {
-    margin-bottom: 0.5rem;
+.task {
+  padding-left: 0.5rem;
 }
 
-/**************************/
-/* BELOW 1200px (Landscape Tablets) */
-/**************************/
-@media (max-width:75em) {
-    .work-history-item {
-        background-image: linear-gradient(to right, var(--color-secondary)100%, rgba(9, 76, 164, 0.3)100%);
-    }
+.task:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
 
-    .title {
-        text-align: center;
-    }
+.task::marker {
+  color: var(--color-primary);
+}
+
+@media (max-width: 59em) {
+  .work-history-item {
+    padding: 2.6rem;
+  }
+
+  .work-history-header {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .duration {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 34em) {
+  .work-history-item {
+    padding: 2.4rem;
+  }
+
+  .role-info {
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+
+  .company {
+    font-size: 1.6rem;
+  }
+
+  .tasks {
+    font-size: 1.55rem;
+  }
 }

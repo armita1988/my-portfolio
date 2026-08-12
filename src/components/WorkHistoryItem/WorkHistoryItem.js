@@ -1,21 +1,32 @@
 import styles from './WorkHistoryItem.module.css';
+
 export default function WorkHistoryItem({ workHistoryItem }) {
   return (
-    <div className={styles['work-history-item']}>
-      <div className={styles['work-history-content']}>
-        <div className={styles['title-container']}>
+    <article className={styles['work-history-item']}>
+      <div className={styles['work-history-header']}>
+        <div className={styles['role-info']}>
           <div className={styles['logo-box']}>
-            <img className={styles.logo} src={workHistoryItem.logo} alt={`${workHistoryItem.title}-logo`} />
+            <img className={styles.logo} src={workHistoryItem.logo} alt={`${workHistoryItem.company} logo`} />
           </div>
-          <h3 className={styles.title}>{`${workHistoryItem.title}, ${workHistoryItem.company}`}</h3>
+
+          <div>
+            <h3 className={styles.title}>{workHistoryItem.title}</h3>
+            <p className={styles.company}>{workHistoryItem.company}</p>
+          </div>
         </div>
-        <p className={styles.duration}>{`${workHistoryItem.startDate} - ${workHistoryItem.endDate}`}</p>
-        <ul className={styles.tasks}>
-          {workHistoryItem.tasks.map((task) => (
-            <li className={styles.task}>{task}</li>
-          ))}
-        </ul>
+
+        <p className={styles.duration}>
+          {workHistoryItem.startDate} — {workHistoryItem.endDate}
+        </p>
       </div>
-    </div>
+
+      <ul className={styles.tasks}>
+        {workHistoryItem.tasks.map((task) => (
+          <li key={task} className={styles.task}>
+            {task}
+          </li>
+        ))}
+      </ul>
+    </article>
   );
 }

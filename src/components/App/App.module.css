@@ -1,46 +1,38 @@
 .app {
-    background-color: var(--color-bg);
-    max-width: 144rem;
-    padding: 0 5rem;
+  background-color: var(--color-bg);
+
+  max-width: 144rem;
+  padding: 0 5rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  row-gap: 0rem;
+
+  grid-template-areas:
+    'nav'
+    'hero'
+    'about'
+    'experience'
+    'projects'
+    'education'
+    'contact';
+
+  justify-items: center;
+}
+
+@media (max-width: 75em) {
+  .app {
+    max-width: 80%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    row-gap: 8rem;
-    grid-template-areas:
-        "nav"
-        "hero"
-        "about"
-        "experience"
-        "projects"
-        "contact"
-    ;
-    justify-items: center;
+  }
 }
 
-
-/**************************/
-/* BELOW 1200px (Landscape Tablets) */
-/**************************/
-@media(max-width:75em) {
-    .app {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-}
-
-/**************************/
-/* BELOW 944px (Tablets) */
-/**************************/
-@media (max-width: 59em) {}
-
-
-/**************************/
-/* BELOW 704px (Smaller tablets) */
-/**************************/
 @media (max-width: 44em) {
-    .app {
-        max-width: 90%;
-        margin: 0 auto;
-    }
+  .app {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }

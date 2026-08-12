@@ -1,108 +1,163 @@
 .section-hero {
-    grid-area: " hero";
-    width: 88%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    /* gap: 4.8rem; */
-    font-family: 'Roboto';
+  grid-area: hero;
+
+  width: 88%;
+  max-width: 118rem;
+  min-height: 58rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  font-family: var(--font-roboto);
 }
 
-.hero-text {
-    grid-column: 1/2;
+.hero-content {
+  max-width: 100rem;
 }
 
-.hero-header {
-    font-weight: 800;
-    font-size: 7.2rem;
-    margin-bottom: 3.3rem;
+.hero-title {
+  max-width: 90rem;
+  margin-bottom: 1.4rem;
+
+  font-family: var(--font-outfit);
+  font-size: 6.8rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+
+  color: var(--color-text);
 }
 
-/* .hero-title {
-    font-size: 3rem;
-    /* margin-bottom: 2.4rem; 
-}*/
+.hero-location {
+  margin-bottom: 2.2rem;
 
-.hero-subtitle {
-    font-size: 3rem;
-    margin-bottom: 5.2rem;
-    line-height: 1.2;
+  font-family: var(--font-outfit);
+  font-size: 1.55rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: rgba(255, 255, 255, 0.58);
 }
 
-.hero-contact:link,
-hero-contact:visited {
-    display: inline-block;
-    font-family: 'Outfit';
-    font-size: 3rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: inherit;
-    background-color: var(--color-primary);
-    padding: 1.8rem 2.6rem;
-    border-radius: 10rem;
+.hero-summary {
+  max-width: 88rem;
+  margin-bottom: 3.6rem;
+
+  font-size: 2rem;
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, 0.72);
 }
 
-.hero-img-box {
-    grid-column: 2/-1;
-    max-width: 90%;
-    justify-self: end;
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
-.hero-img-box img {
-    max-width: 100%;
+.primary-action,
+.secondary-action {
+  min-height: 4.8rem;
+  padding: 1.2rem 2rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--font-outfit);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+
+  text-decoration: none;
+
+  border-radius: 0.8rem;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-/**************************/
-/* BELOW 1200px (Landscape Tablets) */
-/**************************/
+.primary-action:link,
+.primary-action:visited {
+  color: var(--color-text);
+
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.secondary-action:link,
+.secondary-action:visited {
+  color: var(--color-text);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.primary-action:hover,
+.secondary-action:hover {
+  transform: translateY(-2px);
+}
+
+.secondary-action:hover {
+  border-color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.primary-action:focus-visible,
+.secondary-action:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 4px;
+}
+
 @media (max-width: 75em) {
-    /* .section-hero {
-        grid-template-columns: 55fr 45fr; 
-         gap: 2rem;
-    } */
+  .section-hero {
+    width: 100%;
+    min-height: 52rem;
+  }
 
-    .hero-header {
-        font-size: 6.2rem;
-    }
+  .hero-title {
+    font-size: 5.8rem;
+  }
 
-    .hero-subtitle {
-        font-size: 2.4rem;
-    }
-
-    .hero-contact:link,
-    hero-contact:visited {
-        font-size: 2.4rem;
-    }
+  .hero-summary {
+    font-size: 1.8rem;
+  }
 }
 
+@media (max-width: 44em) {
+  .section-hero {
+    min-height: auto;
+    padding: 5rem 0 2rem;
+  }
 
-/**************************/
-/* BELOW 1200px (Landscape Tablets) */
-/**************************/
+  .hero-title {
+    font-size: 4.8rem;
+  }
 
-@media (max-width: 75em) {
-    .section-hero {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        place-items: center;
-    }
+  .hero-location {
+    font-size: 1.5rem;
+  }
 
-    .hero-text {
-        grid-column: 1/-1;
-        grid-row: 2;
-        /* max-width: 70%; */
-        align-self: center;
-        justify-self: center;
-        text-align: center;
-    }
+  .hero-summary {
+    font-size: 1.75rem;
+    line-height: 1.6;
+  }
+}
 
-    .hero-img-box {
-        grid-column: 1/-1;
-        grid-row: 1;
-        display: flex;
-        justify-self: center;
-        width: 60%
-    }
+@media (max-width: 34em) {
+  .hero-title {
+    font-size: 4.2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .primary-action,
+  .secondary-action {
+    width: 100%;
+  }
 }

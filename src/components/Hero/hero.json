@@ -1,6 +1,11 @@
 {
-  "header": "Hi, I'm Armita",
-  "subtitle": "Full-Stack Developer focused on building scalable and maintainable web applications using React, Node.js, Express and MongoDB, with strong emphasis on clean architecture, and API design.",
-  "contactEmail": "armita.hajimani@gmail.com",
-  "image": "/assets/hero/heroImage.png"
+  "name": "Armita Haji Mani",
+  "title": "Full-Stack Software Engineer",
+  "location": "Montreal, QC",
+  "summary": "5+ years of professional engineering experience, combining a production backend/data foundation with end-to-end ownership of modern web applications—from responsive React interfaces and Node.js APIs to MongoDB, AWS, Docker, and CI/CD.",
+  "links": {
+    "trailora": "https://trailora.armita.dev",
+    "github": "https://github.com/armita1988",
+    "linkedin": "https://www.linkedin.com/in/armita-haji-mani/"
+  }
 }

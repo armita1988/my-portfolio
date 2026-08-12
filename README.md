@@ -1,130 +1,107 @@
-# Portfolio Website
+# Armita Haji Mani — Portfolio
 
-![React](https://img.shields.io/badge/React-Frontend-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![CSS Modules](https://img.shields.io/badge/CSS-Modules-blue)
-![Responsive](https://img.shields.io/badge/UI-Responsive-green)
+**Full-Stack Software Engineer | Montreal, QC**
 
-A **personal portfolio website** built with **React, JavaScript, and CSS Modules** to showcase projects, technical skills, and professional experience.  
-The project focuses on **clean UI structure, responsive design, and clear presentation of full-stack development work**.
+Personal portfolio showcasing my professional engineering background, selected full-stack work, and end-to-end product development experience.
 
----
+I bring **5+ years of professional engineering experience**, combining a production backend/data foundation with hands-on ownership across modern React applications, Node.js APIs, databases, cloud infrastructure, Docker, and CI/CD.
 
-## Live Demo
-
-[Portfolio Website](https://armita-hajimani-portfolio.netlify.app/)
+**Live Portfolio:** [armita-hajimani-portfolio.netlify.app](https://armita-hajimani-portfolio.netlify.app)
 
 ---
 
-## Tech Stack
+## Professional Focus
+
+My background spans:
+
+- **Backend & Data Engineering** — Python, Java, Kafka, Elasticsearch, ETL/ELT, APIs, and production data systems
+- **Full-Stack Development** — React, Node.js, Express, MongoDB, authentication, payments, and responsive product workflows
+- **Cloud & Delivery** — AWS, Docker, Nginx, GitHub Actions, and CI/CD
+- **Frontend Engineering** — responsive React interfaces, reusable components, custom hooks, state management, and API integration
+
+---
+
+## Featured Project
+
+### Trailora
+
+**Production Full-Stack Travel Booking Platform**
+
+As the sole developer, I engineered, built, and deployed Trailora end-to-end across a responsive React frontend, Node.js/Express REST API, MongoDB Atlas, authentication and role-based authorization, Stripe payments, AWS infrastructure, Docker, and GitHub Actions CI/CD.
+
+The platform includes tour discovery and filtering, interactive maps, account and booking workflows, reviews, downloadable invoices, verified Stripe webhooks, image processing and S3 storage, containerized backend deployment, and automated frontend/backend delivery.
+
+**Links**
+
+- [Live Platform](https://trailora.armita.dev)
+- [Frontend Repository](https://github.com/armita1988/trailora-frontend)
+- [Backend Repository](https://github.com/armita1988/trailora-backend)
+
+---
+
+## Selected React Projects
+
+### usePopcorn
+
+Responsive React movie discovery and rating application implemented from scratch with reusable custom hooks, OMDb API integration, abortable asynchronous requests, persistent localStorage state, keyboard interactions, and reusable components.
+
+- [Live Application](https://armita-usepopcorn.netlify.app)
+- [GitHub Repository](https://github.com/armita1988/usepopcorn)
+
+### React Quiz
+
+Responsive React quiz application implemented from scratch with `useReducer`-driven state management, asynchronous question loading, timed quiz flow, scoring, progress tracking, answer feedback, and restart functionality.
+
+- [Live Application](https://armita-react-quiz-app.netlify.app)
+- [GitHub Repository](https://github.com/armita1988/react-quiz-app)
+
+---
+
+## Portfolio Implementation
+
+This portfolio is built with:
 
 - React
-- JavaScript (ES6+)
+- JavaScript ES6+
 - CSS Modules
-- HTML5
+- Responsive Web Design
+- Component-based UI architecture
+- Data-driven content rendering
+
+The interface is designed for desktop, tablet, and mobile layouts and presents professional experience, engineering capabilities, projects, education, and contact information in a focused recruiter-friendly structure.
 
 ---
 
-## Features
+## Education
 
-- Responsive portfolio layout
-- Hero, About, Experience, Projects, and Contact sections
-- Project cards with GitHub and live demo links
-- Clean component-based structure
-- Reusable styling with CSS Modules
-- Focused presentation of full-stack projects and technical skills
+- **A.E.C. in Full-Stack Development** — John Abbott College, Montreal | 2023–2025
+- **M.Sc. in Artificial Intelligence** — University of Tehran | 2015–2017
+- **B.Sc. in Computer Science** — Sharif University of Technology | 2006–2011
 
 ---
 
-## Sections Overview
+## Run Locally
 
-### Hero
-
-Introduces the developer profile with a clear full-stack positioning.
-
-### About
-
-Highlights engineering background, full-stack focus, and current career direction.
-
-### Experience
-
-Presents professional and academic experience in software, data, and full-stack development.
-
-### Projects
-
-Showcases selected projects including backend and frontend applications.
-
-### Contact
-
-Provides direct links for email, LinkedIn, and GitHub.
-
----
-
-## Architecture Overview
-
-The project follows a **component-based frontend architecture** using React.
-
-### UI Flow
-
-```text
-App
-  ↓
-Section Components
-  ↓
-Reusable UI + Data-Driven Content
-  ↓
-Responsive Layout
-```
-
----
-
-## Key Frontend Practices
-
-- Component-based UI development with React
-- Data-driven rendering for sections such as experience and projects
-- Modular styling using CSS Modules
-- Responsive design for desktop and mobile layouts
-- Clear content hierarchy for recruiter-friendly presentation
-
----
-
-## Installation
-
-Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/armita1988/my-portfolio.git
-```
-
-Enter the project folder
-
-```bash
 cd my-portfolio
 ```
 
-Install dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
----
-
-## Run the Project
-
-Development mode
+Start the development server:
 
 ```bash
 npm start
 ```
 
-The app runs at
-
-```text
-http://localhost:3000
-```
-
-Build for production
+Create a production build:
 
 ```bash
 npm run build
@@ -135,6 +112,8 @@ npm run build
 ## Author
 
 **Armita Haji Mani**  
-Full-Stack Developer
+Full-Stack Software Engineer — Montreal, QC
 
-GitHub: https://github.com/armita1988
+- [GitHub](https://github.com/armita1988)
+- [LinkedIn](https://www.linkedin.com/in/armita-haji-mani/)
+- [Trailora](https://trailora.armita.dev)

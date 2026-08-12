@@ -5,16 +5,18 @@ import AboutItem from '../AboutItem/AboutItem';
 export default function About() {
   return (
     <section id="about" className={styles['section-about']}>
-      <h2 className={styles['about-title']}>About</h2>
-      <div className={styles['about-content']}>
-        <div className={styles['about-img-box']}>
-          <img src="/assets/about/aboutImage.png" alt="about" />
-        </div>
-        <div className={styles['about-items']}>
-          {aboutMe.map((el, i) => (
-            <AboutItem key={i} aboutItem={el} />
-          ))}
-        </div>
+      <div className={styles['section-heading']}>
+        <p className={styles['section-label']}>About</p>
+
+        <h2 className={styles['about-title']}>
+          From production backend/data systems to end-to-end full-stack delivery.
+        </h2>
+      </div>
+
+      <div className={styles['about-items']}>
+        {aboutMe.map((item) => (
+          <AboutItem key={item.title} aboutItem={item} />
+        ))}
       </div>
     </section>
   );

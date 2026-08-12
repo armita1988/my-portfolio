@@ -4,46 +4,24 @@
     "company": "KinoKlik",
     "logo": "/assets/history/kinoklik_logo.jfif",
     "startDate": "Oct 2025",
-    "endDate": "Present",
+    "endDate": "Dec 2025",
     "tasks": [
-      "Developed React and Tailwind CSS features to improve UI responsiveness and user experience",
-      "Debugged Node.js backend logic, including authentication and API flows",
-      "Resolved bugs across frontend and backend within an existing MERN codebase"
-    ]
-  },
-  {
-    "title": "Full-Stack Developer (Academic Projects)",
-    "company": "John Abbott College",
-    "logo": "/assets/history/john_abbott_college_logo.jfif",
-    "startDate": "Feb 2023",
-    "endDate": "2025",
-    "tasks": [
-      "Built full-stack web applications using the MERN stack",
-      "Designed and implemented RESTful APIs connected to dynamic React interfaces",
-      "Managed data flow between frontend and backend using MongoDB"
+      "Implemented and refined responsive React/Tailwind interfaces across actor profiles, filmmaker notification flows, EPK photo galleries, and account experiences for desktop and mobile.",
+      "Diagnosed and fixed full-stack authentication issues across signup/login, account switching, session cleanup, and password-reset validation in an existing MERN codebase.",
+      "Traced cross-layer defects between the React frontend and Node.js backend services and delivered coordinated UI/API fixes."
     ]
   },
   {
     "title": "Data Engineer",
     "company": "Dataak",
     "logo": "/assets/history/dataak_logo.jfif",
-    "startDate": "Mar 2018",
+    "startDate": "Apr 2017",
     "endDate": "Apr 2022",
     "tasks": [
-      "Developed data pipelines using Python and Java for processing large datasets",
-      "Designed APIs and optimized data workflows for better performance and reliability",
-      "Worked with SQL and NoSQL databases to manage and transform data efficiently"
-    ]
-  },
-  {
-    "title": "Junior Data Engineer",
-    "company": "LifeWeb",
-    "logo": "/assets/history/lifeweb_logo.jfif",
-    "startDate": "Apr 2017",
-    "endDate": "Mar 2018",
-    "tasks": [
-      "Developed ETL workflows using Java for data processing",
-      "Maintained and improved existing data pipelines for stability and performance"
+      "Built and maintained production backend data services and ETL/ELT pipelines in Python and Java, integrating Kafka, Elasticsearch, Solr, and SQL/NoSQL systems for large-scale ingestion, transformation, indexing, and retrieval.",
+      "Managed and tuned multi-node Elasticsearch clusters, implementing hot/warm/cold/archive lifecycle strategies to improve retrieval performance, scalability, and storage efficiency.",
+      "Designed, monitored, and tuned backend APIs and Elasticsearch services with Elastic APM and Watcher to diagnose bottlenecks and improve reliability across production data workflows.",
+      "Developed reusable Python architecture for ETL/ELT pipelines and distributed workflows using Kafka, Elasticsearch/ELK, and Airflow."
     ]
   }
 ]

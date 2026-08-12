@@ -1,10 +1,12 @@
-import Contact from '../Contact/Contact';
+import styles from './App.module.css';
+
+import Navbar from '../Navbar/Navbar';
+import Hero from '../Hero/Hero';
 import About from '../About/About';
 import Experience from '../Experience/Experience';
-import Hero from '../Hero/Hero';
-import Navbar from '../Navbar/Navbar';
 import Projects from '../Projects/Projects';
-import styles from './App.module.css';
+import Education from '../Education/Education';
+import Contact from '../Contact/Contact';
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
       <About />
       <Experience />
       <Projects />
+      <Education />
       <Contact />
     </div>
   );
