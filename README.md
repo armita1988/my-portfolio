@@ -6,7 +6,7 @@ Personal portfolio showcasing my professional engineering background, selected f
 
 I bring **5+ years of professional engineering experience**, combining a production backend/data foundation with hands-on ownership across modern React applications, Node.js APIs, databases, cloud infrastructure, Docker, and CI/CD.
 
-**Live Portfolio:** [armita-hajimani-portfolio.netlify.app](https://armita-hajimani-portfolio.netlify.app)
+**Live Portfolio:** [armita.dev](https://armita.dev/)
 
 ---
 
@@ -45,14 +45,14 @@ The platform includes tour discovery and filtering, interactive maps, account an
 
 Responsive React movie discovery and rating application implemented from scratch with reusable custom hooks, OMDb API integration, abortable asynchronous requests, persistent localStorage state, keyboard interactions, and reusable components.
 
-- [Live Application](https://armita-usepopcorn.netlify.app)
+- [Live Application](https://usepopcorn.armita.dev/)
 - [GitHub Repository](https://github.com/armita1988/usepopcorn)
 
 ### React Quiz
 
 Responsive React quiz application implemented from scratch with `useReducer`-driven state management, asynchronous question loading, timed quiz flow, scoring, progress tracking, answer feedback, and restart functionality.
 
-- [Live Application](https://armita-react-quiz-app.netlify.app)
+- [Live Application](https://quiz.armita.dev/)
 - [GitHub Repository](https://github.com/armita1988/react-quiz-app)
 
 ---

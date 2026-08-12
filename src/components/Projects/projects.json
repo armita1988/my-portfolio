@@ -2,7 +2,7 @@
   {
     "title": "Trailora",
     "subtitle": "Production Full-Stack Travel Booking Platform",
-    "description": "As the sole developer, I independently engineered, built, and deployed Trailora end-to-end as a live travel-booking platform, spanning a responsive React frontend, Node.js/Express REST API, MongoDB Atlas, authentication and authorization, Stripe payments, AWS infrastructure, Docker, and GitHub Actions CI/CD.",
+    "description": "As the sole developer, I engineered, built, and deployed Trailora end-to-end as a live travel-booking platform, spanning a responsive React frontend, Node.js/Express REST API, MongoDB Atlas, authentication and authorization, Stripe payments, AWS infrastructure, Docker, and GitHub Actions CI/CD.",
     "technologies": ["React", "Node.js", "Express", "MongoDB Atlas", "Stripe", "AWS", "Docker", "GitHub Actions"],
     "image": "/assets/projects/trailora-explore.png",
     "featured": true,
@@ -25,7 +25,7 @@
     "image": "/assets/projects/usepopcorn-preview.png",
     "featured": false,
     "links": {
-      "demo": "https://armita-usepopcorn.netlify.app/",
+      "demo": "https://usepopcorn.armita.dev/",
       "source": "https://github.com/armita1988/usepopcorn"
     }
   },
@@ -37,7 +37,7 @@
     "image": "/assets/projects/react-quiz-preview.png",
     "featured": false,
     "links": {
-      "demo": "https://armita-react-quiz-app.netlify.app/",
+      "demo": "https://quiz.armita.dev/",
       "source": "https://github.com/armita1988/react-quiz-app"
     }
   }
