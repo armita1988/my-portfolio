@@ -9,7 +9,7 @@ export default function About() {
         <p className={styles['section-label']}>About</p>
 
         <h2 className={styles['about-title']}>
-          From production backend/data systems to end-to-end full-stack delivery.
+          From production software engineering to end-to-end full-stack delivery.
         </h2>
       </div>
 

@@ -8,20 +8,20 @@
     "tasks": [
       "Implemented and refined responsive React/Tailwind interfaces across actor profiles, filmmaker notification flows, EPK photo galleries, and account experiences for desktop and mobile.",
       "Diagnosed and fixed full-stack authentication issues across signup/login, account switching, session cleanup, and password-reset validation in an existing MERN codebase.",
-      "Traced cross-layer defects between the React frontend and Node.js backend services and delivered coordinated UI/API fixes."
+      "Traced defects across the React frontend and Node.js backend and delivered coordinated UI/API fixes to improve application reliability and user flows."
     ]
   },
   {
-    "title": "Data Engineer",
+    "title": "Software Engineer",
     "company": "Dataak",
     "logo": "/assets/history/dataak_logo.jfif",
     "startDate": "Apr 2017",
     "endDate": "Apr 2022",
     "tasks": [
-      "Built and maintained production backend data services and ETL/ELT pipelines in Python and Java, integrating Kafka, Elasticsearch, Solr, and SQL/NoSQL systems for large-scale ingestion, transformation, indexing, and retrieval.",
-      "Managed and tuned multi-node Elasticsearch clusters, implementing hot/warm/cold/archive lifecycle strategies to improve retrieval performance, scalability, and storage efficiency.",
-      "Designed, monitored, and tuned backend APIs and Elasticsearch services with Elastic APM and Watcher to diagnose bottlenecks and improve reliability across production data workflows.",
-      "Developed reusable Python architecture for ETL/ELT pipelines and distributed workflows using Kafka, Elasticsearch/ELK, and Airflow."
+      "Built and maintained production backend data services and ETL/ELT pipelines in Python and Java, integrating Kafka, Elasticsearch, Solr, and SQL systems for high-volume ingestion, transformation, indexing, and retrieval, with Airflow for workflow scheduling and monitoring.",
+      "Developed and supported REST APIs using Python and Flask, and used Elastic APM and Watcher for production monitoring, issue investigation, and alerting.",
+      "Managed large-scale Elasticsearch clusters spanning 10+ nodes, implementing hot/warm/cold/archive lifecycle strategies to improve scalability and storage efficiency.",
+      "Contributed to designing reusable object-oriented ETL frameworks in Python and Java, defining shared base classes and standardized extraction, transformation, and destination patterns used across multiple pipelines."
     ]
   }
 ]

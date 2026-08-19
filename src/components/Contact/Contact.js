@@ -6,11 +6,10 @@ export default function Contact() {
       <div className={styles['contact-content']}>
         <p className={styles['section-label']}>Contact</p>
 
-        <h2 className={styles['contact-title']}>Open to full-stack software engineering opportunities.</h2>
+        <h2 className={styles['contact-title']}>Open to full-stack and software engineering opportunities.</h2>
 
         <p className={styles['contact-description']}>
-          I'm interested in roles where I can contribute across modern frontend development, backend systems, and cloud
-          delivery—bringing a strong production engineering foundation and end-to-end ownership.
+          I'm interested in roles where I can contribute across modern frontend development, Node.js/Express backend systems, and cloud delivery—bringing a strong production software engineering foundation and end-to-end ownership.
         </p>
       </div>
 
